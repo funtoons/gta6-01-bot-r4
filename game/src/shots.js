@@ -22,7 +22,7 @@ export function stageShot(name, G, audio) {
     G.onFoot = true; G.car = null; G.z = 1200; G.x = 0.4; G.wanted = 1;
     for (let i = 0; i < 22; i += 1) stepShot(G, audio, 0, 0);
     startMission(G, 0, audio);
-    G.cops.push({ name: 'GULL-1', z: G.z + 45, x: 0.55, speed: 0, status: 'PURSUIT', hp: 60, ram: 0 });
+    G.cops.push({ name: 'REEF-3', z: G.z + 45, x: 0.55, speed: 0, status: 'PURSUIT', hp: 60, ram: 0 });
     G.dialog = { name: 'MAMA ZOLA', role: 'Diner Owner', text: 'Rio, honey — the parcel is on the counter. Cops are thick tonight, so keep it smooth.', t: 9 };
     return 'play';
   }
